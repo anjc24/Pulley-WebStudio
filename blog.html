@@ -16,7 +16,86 @@
 
   <link rel="stylesheet" href="swiper.min.css">
 	<link rel="stylesheet" href="owl.carousel.min.css">
-	<link rel="stylesheet" href="animate.min.css" />
+    <link rel="stylesheet" href="animate.min.css" />
+    
+    <style>
+.blog{
+	font-family: "Rubik", cursive;
+	margin:0;
+	padding:20px;
+	background-color: #dddddd;
+}
+*{
+	box-sizing: border-box;
+}
+.row:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+header{
+	background-color: #ffffff;
+	padding:30px;
+}
+header h1{
+	text-align: center;
+	font-size:60px;
+    color:#000000;
+
+	margin:1.5 0px;
+}
+
+h2{
+	color:#002d53;
+margin:1.5 0px;	
+
+}
+.left-column{
+float: left;
+width: 75%;	
+}
+
+.right-column{
+ width: 25%;
+ float: right;
+ padding-left:20px;
+}
+.card{
+	padding: 20px;
+	background-color: #ffffff;
+ margin-top:20px;
+
+}
+
+.card img{
+	width: 100%;
+}
+
+
+.right-column .card img{
+	margin-bottom: 10px;
+}
+header {
+
+     padding: 0px;
+}
+.bloghead{
+    color: #ffffff;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/*responsive */
+
+@media(max-width:800px){
+	.left-column,.right-column{
+    width: 100%;
+    padding: 0px;
+	}
+}
+
+    </style>
 </head>
 
 <body>
@@ -24,7 +103,8 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg fatop">
         <a class="navbar-brand" href="#">
-          <i class="fas fa-book-reader fa-2x mx-3 "></i>Pulley Web Studio</a>
+          <img src="assets/pws-web.png" width="200px"  alt="">
+           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -60,7 +140,7 @@
     <div class="container aheader theader text-center">
       <div class="row">
         <div class=" col-12  text-white">
-          <h1 class="">BLOG</h1>
+          <h1 class="bloghead">BLOG</h1>
           <p class=" ">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
@@ -80,217 +160,81 @@
     </div>
 
   </header> 
-
-
-  <div style="background-color: lightgray; height: 100px;"></div>
-  <div id="wordpress1">
-      <img src="wordpress1.jpg">
-        <h5> HEADING  </h5>
-      <p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-           Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-            Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-        </p>
-  </div>
-  <div id="search">
-    <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search.." name="search">
-          <i class="fa fa-search"></i></input>
-        </form>
+  <div class="row blog">
+    <div class="left-column">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, June 15, 2020</h5>
+        <img src="imgb/b1.jpg" alt="blog "/>
+        <p>Some text..</p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, June 15, 2020</h5>
+        <img src="imgb/blog2.jpg" alt="blog "/>
+        <p>Some text..</p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.S</p>
       </div>
     </div>
-    <div id="about">
-        <p>About Me</p>
-        <img src="assets\femaleuser.png">
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis, 
-            metus quis bibendum efficitur, arcu metus auctor risus, ac volutpat nisl odio et urna. Curabitur cursus, 
-            </p>
+
+    <div class="right-column">
+        <div class="card">
+             <h2>About Me</h2>
+             <img src="imgb/a.png" alt="me"/>
+             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+        </div>
+        <div class="card">
+             <h3>Popular Post</h3>
+             <img src="imgb/a.png" alt="popular"/>
+             <img src="imgb/a.png" alt="popular"/>
+             <img src="imgb/a.png" alt="popular"/>
+        </div>
+        <div class="card">
+            <h3>Follow Us</h3>
+            <p>Some Text...</p>
+        </div>
     </div>
-    
-    <div id="wordpress1">
-        <img src="wordpress1.jpg">
-          <h5> HEADING  </h5>
-        <p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-             Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-              Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-          </p>
-    </div>
-    <div id="popular">
-      <p>Popular Post</p>
-      <img src="wordpress1.jpg">&nbsp;&nbsp; <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis </p><br>
-      <hr><br>
-      <img src="wordpress1.jpg">&nbsp;&nbsp; <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis </p><br>
-      <hr><br>
-      <img src="wordpress1.jpg">&nbsp;&nbsp;
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris iaculis </p><br>
-  </div>
-
-    <div id="wordpress1">
-      <img src="wordpress1.jpg">
-        <h5> HEADING  </h5>
-      <p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-           Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-            Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-      </p>
-  </div>
- 
- <div id="categories">
-    <p>Popular Categories</p>
-    <hr>
-     <p class="text">Lorem ipsum  </p>
-    <hr>
-     <p class="text">Lorem ipsum  </p>
-    <hr>
-    <p class="text">Lorem ipsum  </p><hr>
-    <p class="text">Lorem ipsum  </p>
-    <hr>
 </div>
-  <div id="wordpress1" >
-    <img src="wordpress1.jpg">
-      <h5> HEADING  </h5>
-    <p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-         Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-          Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-      </p>
-</div>
-<div id="instagram">
-  <p>Instagram Feeds</p>
-  <p class="text">[instagram feeds}</p>
-</div>
-<div id="wordpress1">
-  <img src="wordpress1.jpg">
-    <h5> HEADING  </h5>
-  <p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-       Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-        Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-    </p>
-</div>
-<div id="wordpress1">
-<img src="wordpress1.jpg">
-  <h5> HEADING  </h5>
-<p>Curabitur eu arcu accumsan, congue lacus posuere, placerat urna.
-     Nam a magna vitae felis tempor sollicitudin vel ac lorem. Donec id neque at dolor ullamcorper ultrices id eu nulla.
-      Donec ac commodo nibh, id vulputate purus. Cras sed mauris nunc. Nam ultricies, erat nec ultrices viverra, nisi arcu tincidunt 
-  </p>
-</div>
-<div style="background-color: lightgray;height: 50px;"></div>
-</main>
 
-
-
-
-<div class="twrapper ">
-  <div class="tbox">
-    <div class="tbox-img">
-      <img width="95%" src="assets/dummy.jpg" alt="">
-    </div>
-    <div class="tbox-text">
-      <h1>Lorem Ipsum</h1>
-      <p><Span>Job Title :</Span> Senior Software Engineer</p>
-      <p><Span>Experience :</Span> 5 yearsr</p>
-      <p><Span>Email :</Span> example@gmail.com</p>
-      <p><Span>Contact No :</Span> +91-9999999999</p>
-      <p><Span>Address :</Span> Lorem ipsum dolor sit amet consectetur </p>
-       
-
-         <div class="tsocial">
-            <a href=""><i class="fab fa-facebook-f"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
+<div class="row blog">
+    <div class="left-column">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, June 15, 2020</h5>
+        <img src="imgb/b1.jpg" alt="blog "/>
+        <p>Some text..</p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, June 15, 2020</h5>
+        <img src="imgb/blog2.jpg" alt="blog "/>
+        <p>Some text..</p>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.S</p>
+      </div>
+    </div>
 
-  </div>
+    <div class="right-column">
+        <div class="card">
+             <h2>About Me</h2>
+             <img src="imgb/a.png" alt="me"/>
+             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry..</p>
+        </div>
+        <div class="card">
+             <h3>Popular Post</h3>
+             <img src="imgb/a.png" alt="popular"/>
+             <img src="imgb/a.png" alt="popular"/>
+             <img src="imgb/a.png" alt="popular"/>
+        </div>
+        <div class="card">
+            <h3>Follow Us</h3>
+            <p>Some Text...</p>
+        </div>
+    </div>
 </div>
 
-<section class="serviceoffers tskills" id="servicediv">
-  <div class="container headskill heading text-center">
-    <h1 class="text-center  font-weight-bold ">SKILLS AND CERTIFICATIONS</h1>
-    <p class="text-center animate__animated "> Lorem Ipsum is simply dummy text of the printin !</p>
-  </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-10 offset-1 offset-lg-0">
-        <h1 class="skillh">Skills</h1>
-        <div class="progress w-75">
-          <div class="progress-bar progress-bar-striped  pb0 progress-bar-animated" style="width:80%">80%</div>
-         </div>
-         <p class="ps">Lorem Ipsum is simply dummy text of the printin <br>Lorem Ipsum is simply dummy text of the printin</p>
-        <div class="names my-3">
-          <h1>WEB DEVELOPMENT</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped  pb1 progress-bar-animated" style="width:90%">90%</div>
-          </div>
-        </div>
-        <div class="names my-3">
-          <h1>WEB DESIGNING</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb2 progress-bar-animated" style="width:80%">80%</div>
-          </div>
-        </div>
-        <div class="names my-3">
-          <h1>FRONTEND</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb3 progress-bar-animated" style="width:75%">75%</div>
-          </div>
-        </div>
-        <div class="names my-3">
-          <h1>BACKEND</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb4 progress-bar-animated" style="width:80%">80%</div>
-          </div>
-        </div>
-        <div class="names my-3">
-          <h1>GRAPHIC DESIGNING</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb5 progress-bar-animated" style="width:90%">90%</div>
-          </div>
-        </div>     
-        <div class="names my-3">
-          <h1>BACKEND</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb4 progress-bar-animated" style="width:80%">80%</div>
-          </div>
-        </div>
-        <div class="names my-3">
-          <h1>GRAPHIC DESIGNING</h1>
-          <div class="progress w-75">
-           <div class="progress-bar progress-bar-striped pb5 progress-bar-animated" style="width:90%">90%</div>
-          </div>
-        </div>    
-        
-      </div>
-    
-
-    <div class="col-lg-6 col-md-12 col-12 servicediv">
-      <h1 class="skillh">CERTIFICATIONS</h1>
-      <div class="progress w-75">
-        <div class="progress-bar progress-bar-striped  pb0 progress-bar-animated" style="width:60%">60%</div>
-       </div>
-       <p class="ps">Lorem Ipsum is simply dummy text of the printin <br>Lorem Ipsum is simply dummy text of the printin</p>
-        
-        <div class="row">
-          <div class="col-6">
-            <img width="100%" src="assets/dsa certificate.jpg" alt="">
-          </div>
-          <div class="col-6">
-            <img width="100%" src="assets/dsa certificate.jpg" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-            <img width="100%" src="assets/dsa certificate.jpg" alt="">
-          </div>
-          <div class="col-6">
-            <img width="100%" src="assets/dsa certificate.jpg" alt="">
-          </div>
-        </div>
-    </div> 
-    </div>
-  </div>
-</section>
-   
 
 
     <section class="section-3 tapp container-fluid p-0 text-center">
@@ -361,46 +305,49 @@
           </div>
         </div>
       </div>
-  <footer>
-    <div class="container-fluid p-0">
-      <div class="row text-left">
-        <div class="col-md-5 col-sm-5">
-          <h4 class="text-light">About us</h4>
-          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
-          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved | 
-            <span>The Asper Team</span>
-          </p>
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <h4 class="text-light">Newsletter</h4>
-          <p class="text-muted">Stay Updated</p>
-          <form class="form-inline">
-            <div class="col pl-0">
-              <div class="input-group pr-5">
-                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
-                <div class="input-group-prepend">
-                  <div class="input-group-text">
-                    <i class="fas fa-arrow-right"></i>
+      <footer>
+        <div class="container-fluid p-0">
+          <div class="row text-left">
+            <div class="col-md-5 col-sm-5">
+              <h4 class="text-light">About us</h4>
+              <p class="text-muted">A growing fraternity of individuals dedicated towards learning and growing together.
+                Web Developers | Contributors
+                </p>
+              <p class="pt-4 text-muted">Copyright ©2020 All rights reserved | 
+                <span>Developed by: The Asper Team</span>
+              </p>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <h4 class="text-light">Newsletter</h4>
+              <p class="text-muted">Never want to miss any important update from our side?<br>
+                Stay connected.
+                </p>
+              <form class="form-inline">
+                <div class="col pl-0">
+                  <div class="input-group pr-5">
+                    <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fas fa-arrow-right"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </form>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <h4 class="text-light">Follow Us</h4>
+              <p class="text-muted">Let get social</p>
+              <div class="column text-light">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="col-md-2 col-sm-12">
-          <h4 class="text-light">Follow Us</h4>
-          <p class="text-muted">Let us be social</p>
-          <div class="column text-light">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
           </div>
         </div>
-      </div>
-    </div>
-  </footer>
-
+      </footer>
   <div class="scrolltop float-right">
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
    </div>

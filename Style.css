@@ -80,6 +80,7 @@ header .nav-item {
 
 header .navbar-brand {
   padding-left: 8rem;
+  padding-top: 1rem !important;
 }
 
 header .nav-link:hover {
@@ -140,14 +141,10 @@ header .nav-item:last-child {
 }
 header{
   background-image: url("assets/bg_Mesa\ de\ trabajo\ 1.png");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
+  height: 75%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+background-size: cover;
 }
 .header-button a{
   border: 1px solid  #00162a;
@@ -251,7 +248,21 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
   margin: 0px 0px;
 
 } 
+.box a img {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 2rem;
+}
 
+.box a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 .extra-div:hover{
    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
@@ -346,8 +357,13 @@ i{
   font-family: var(--Patua);
 }
 
-
-
+header .navbar-brand {
+   padding-left: 5.5rem;
+   padding-top: 2rem;
+}
+.collapse {
+  padding-right: 5rem;
+}
 .pricing{
   margin-top: 8rem;
   width: 100%;
@@ -446,7 +462,7 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 .happyclients{
   margin-top: 0rem;
   width: 100%;
-  height: 35rem;
+  height: 50rem;
   padding: 0px 0;
   font-family: var(--Rubik);
   margin-bottom: -5rem;
@@ -494,22 +510,7 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
   height: 100px;
   border-radius: 50%;
   margin-top: 20px;
-}
-
-.box a:after{
-  content: "\f1a3";
-  font-family: FontAwesome;
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(to right, #0f2033 0%, #0f2033 100%);
-  color: white;
-  position: absolute;
-  top: 120%;
-  left: 70%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border:2px solid #002d53;
 }
 
 .box h1{
@@ -778,16 +779,16 @@ footer .column i + i {
 }
 
 .tsocial{
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 .tbox-text .tsocial a{
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: linear-gradient(to left, #0f2033, #035d84);
     border-radius: 50%;
     color: #fff;
-    font-size: 28px;
+    font-size: 15px;
     text-align: center;
     line-height: 50px;
     margin: 0 15 0 0px;
@@ -797,6 +798,12 @@ footer .column i + i {
 .tbox-text .tsocial i{
 color: white;
 
+}
+
+.tbox-text .tsocial i {
+  transform: translate(0px, -10px);
+  /* margin-top: -20px; */
+  color: white;
 }
 
 .tbox-text .tsocial a:hover{
@@ -1030,12 +1037,30 @@ color: white;
   margin: 1.5rem 0;
 }
 
+.atbox {
+  width: 50%;
+  height: 300px;
+  display: inline-block;
+  margin: 2rem 25rem;
+  box-shadow: 0 27px 87px rgba(0,0,0,0.37);
+  border-radius: 15px;
+  overflow: hidden;
+}
 
-
-
+.atbox h1{
+  font-size: 2rem;
+  margin-bottom: 25px;
+  margin-top: 1rem;
+}
+.atbox p{
+  font-size: 1rem !important;
+}
+.atbox-text{
+  padding: 20px 10px;
+}
 .teama{
   background-image: url("assets/aboutbg.jpg") !important;
-  height: 110vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1053,3 +1078,36 @@ color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.cbox-text p {
+  font-size: 20px;
+  font-weight: 350;
+  color: #2e2e2e;
+  line-height:20px;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px !important;
+}
+
+.teama {
+  background-image: url(assets/aboutbg.jpg) !important;
+  height: 110vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aheader {
+  margin-top: 7rem !important;
+}
+
+.ttt{
+  margin-top: 5rem;
+}
+
+
+.uppersm {
+  margin-left: 70%;
+  transform: translate(0,-140px);
+}
+
