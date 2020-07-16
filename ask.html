@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="assets/pulley logo.png" type="image/gif" sizes="200x200">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/79b105aa87.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+  padding-bottom: 30px;
+  position: relative;
+  min-height: 100%;
+  background: #d2cfcf;
+}
+
+a {
+  transition: background 0.2s, color 0.2s;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+#wrapper {
+  padding-left: 0;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+
+img{
+     height: 8rem;
+    }
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #222;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+.sidebar-brand {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  text-align: center;
+  padding: 20px 0;
+}
+.sidebar-brand h2 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 75px;
+  width: 250px;
+  margin-top: 4rem;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.sidebar-nav > li {
+  text-indent: 10px;
+  line-height: 42px;
+}
+.sidebar-nav > li a {
+  display: block;
+  text-decoration: none;
+  color: #757575;
+  font-weight: 600;
+  font-size: 18px;
+}
+.sidebar-nav > li > a:hover,
+.sidebar-nav > li.active > a {
+  text-decoration: none;
+  color: #fff;
+  background: #002d53;
+}
+.sidebar-nav > li > a i.fa {
+  font-size: 24px;
+  width: 60px;
+}
+
+#navbar-wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+#wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+#navbar-wrapper .navbar {
+  border-width: 0 0 0 0;
+  background-color: #eee;
+  font-size: 24px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+#navbar-wrapper .navbar a {
+  color: #757575;
+}
+#navbar-wrapper .navbar a:hover {
+  color: #002d53;
+}
+
+#content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 100px;
+}
+#wrapper.toggled #content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+#window{
+    display: flex;
+    flex-direction: column;
+}
+#card{
+    margin-top: 40px;
+    margin-left:320px;
+    width: 540px;
+    height: 280px;
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 28px;
+    background-color: #002d53;
+    color: white;
+}
+#profilesection{
+    border-bottom: 2px solid #fff;
+    padding: 8px;
+}
+span img{
+    width: 29px;
+    height: 29px;
+    border-radius: 40%;
+} 
+#username{
+    display: inline;
+    margin: 16px 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+#Question{
+    padding-top: 8px;
+    /* font-weight: 300; */
+    font-family: 'Lato', sans-serif;
+}
+.btn{
+    margin-top: 21px;
+    margin-right: 14px;
+    margin-left: 35px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: rgb(93,92,92);
+    box-shadow: 4px 4px 5px black;
+}
+
+.btn:hover{
+    color: #002d53;
+}
+
+
+
+#heading {
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(236, 236, 236);
+            margin:0 0 3rem 0;
+            font-weight: 900;
+            font-size: 2.5rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding:1rem 0;
+        }
+
+
+
+
+
+@media (min-width: 992px) {
+  #wrapper {
+    padding-left: 250px;
+  }
+  
+  #wrapper.toggled {
+    padding-left: 60px;
+  }
+
+  #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 60px;
+  }
+  
+  #wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -190px;
+}
+  
+  #wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -190px;
+  }
+
+  #navbar-wrapper {
+    position: relative;
+  }
+
+  #wrapper.toggled {
+    padding-left: 60px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  #wrapper.toggled #navbar-wrapper,
+  #wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #wrapper {
+    padding-left: 60px;
+  }
+
+  #sidebar-wrapper {
+    width: 60px;
+  }
+  
+#wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+  
+  #wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+  #navbar-wrapper {
+    position: relative;
+  }
+
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  #wrapper.toggled #navbar-wrapper,
+  #wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 250px;
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+  #wrapper {
+    padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+    width: 0;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  #wrapper.toggled #navbar-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+  #wrapper.toggled #content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+
+  #navbar-wrapper {
+    position: relative;
+  }
+
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
+
+  #content-wrapper {
+    position: relative;
+    top: 0;
+  }
+
+  #wrapper.toggled #navbar-wrapper,
+  #wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 250px;
+  }
+
+
+  #card{
+      margin:auto;
+      width: 360px;
+      height: 250px;
+      margin-bottom: 1rem;
+  }
+
+  #Question{
+      margin-top: 0.7rem;
+      font-size: 10px;
+  }
+  body{
+      text-align: center;
+  }
+
+  .btn{
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: rgb(93,92,92);
+    box-shadow: 4px 4px 5px black;
+}
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+         <img src="assets/pws-web.png" alt="">
+          </div>
+          <ul class="sidebar-nav">
+            <li class="active">
+              <a href="index.html" ><i class="fa fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-plug"></i>Frontend</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user"></i>Backend</a>
+            </li>
+            <li>
+             <a href="#"><i class="fa fa-puzzle-piece"></i>Database</a>
+            </li>
+            
+          </ul>
+        </aside>
+      
+        <div id="navbar-wrapper">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <h1 id="heading">
+            ASK & ANSWER
+        </h1>
+      
+        <section id="window">
+            <section id="card">
+                <div id="profilesection">
+                    <span id="profileimg">
+                        <img src="assets/maleuser.png" alt="">
+                    </span>
+                    <div id="username">USER_NAME</div>
+                </div>
+                <div id="Question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident expedita
+                    modi voluptatum quam consequuntur et nesciunt vel incidunt porro repudiandae corrupti ut obcaecati
+                    labore natus ex nobis similique ipsum nihil dolore eligendi, recusandae accusantium? Voluptates
+                    voluptatum laboriosam nesciunt in atque veritatis  </div>
+                <button class="btn" onclick=""><i class="fas fa-puzzle-piece"></i> Compose</button>
+                <button class="btn"><i class="fas fa-layer-group"></i> Prev ans</button>
+            </section>
+            <section id="card">
+                <div id="profilesection">
+                    <span id="profileimg">
+                        <img src="assets/maleuser.png" alt="">
+                    </span>
+                    <div id="username">USER_NAME</div>
+                </div>
+                <div id="Question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident expedita
+                    modi voluptatum quam consequuntur et nesciunt vel incidunt porro repudiandae corrupti ut obcaecati
+                    labore natus ex nobis similique ipsum nihil dolore eligendi, recusandae accusantium? Voluptates
+                    voluptatum laboriosam nesciunt in atque veritatis  </div>
+                <button class="btn"><i class="fas fa-puzzle-piece"></i> Compose</button>
+                <button class="btn"><i class="fas fa-layer-group"></i> Prev ans</button>
+            </section>
+            <section id="card">
+                <div id="profilesection">
+                    <span id="profileimg">
+                        <img src="assets/maleuser.png" alt="">
+                    </span>
+                    <div id="username">USER_NAME</div>
+                </div>
+                <div id="Question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident expedita
+                    modi voluptatum quam consequuntur et nesciunt vel incidunt porro repudiandae corrupti ut obcaecati
+                    labore natus ex nobis similique ipsum nihil dolore eligendi, recusandae accusantium? Voluptates
+                    voluptatum laboriosam nesciunt in atque veritatis  </div>
+                <button class="btn"><i class="fas fa-puzzle-piece"></i> Compose</button>
+                <button class="btn"><i class="fas fa-layer-group"></i> Prev ans</button>
+            </section>
+            <section id="card">
+                <div id="profilesection">
+                    <span id="profileimg">
+                        <img src="assets/maleuser.png" alt="">
+                    </span>
+                    <div id="username">USER_NAME</div>
+                </div>
+                <div id="Question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident expedita
+                    modi voluptatum quam consequuntur et nesciunt vel incidunt porro repudiandae corrupti ut obcaecati
+                    labore natus ex nobis similique ipsum nihil dolore eligendi, recusandae accusantium? Voluptates
+                    voluptatum laboriosam nesciunt in atque veritatis  </div>
+                <button class="btn"><i class="fas fa-puzzle-piece"></i> Compose</button>
+                <button class="btn"><i class="fas fa-layer-group"></i> Prev ans</button>
+            </section>
+            <section id="card">
+                <div id="profilesection">
+                    <span id="profileimg">
+                        <img src="assets/maleuser.png" alt="">
+                    </span>
+                    <div id="username">USER_NAME</div>
+                </div>
+                <div id="Question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis provident expedita
+                    modi voluptatum quam consequuntur et nesciunt vel incidunt porro repudiandae corrupti ut obcaecati
+                    labore natus ex nobis similique ipsum nihil dolore eligendi, recusandae accusantium? Voluptates
+                    voluptatum laboriosam nesciunt in atque veritatis  </div>
+                <button class="btn" onclick="upload.html"><i class="fas fa-puzzle-piece"></i> Compose</button>
+                <button class="btn"><i class="fas fa-layer-group"></i> Prev ans</button>
+            </section>
+        </section>
+      
+      </div>
+
+
+      <script>
+          const $button  = document.querySelector('#sidebar-toggle');
+const $wrapper = document.querySelector('#wrapper');
+
+$button.addEventListener('click', (e) => {
+  e.preventDefault();
+  $wrapper.classList.toggle('toggled');
+});
+      </script>
+</body>
+</html>
