@@ -189,7 +189,9 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 .section-1 {
   padding: 20vmin 0vmin;
 }
-
+.collapse {
+  padding-right: 0rem !important;
+}
 .section-1 .row .col-md-6 .pray img {
   opacity: 0.8;
   width: 80%;
