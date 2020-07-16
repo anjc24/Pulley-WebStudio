@@ -269,5 +269,9 @@ height: 80vh;
   margin-top: 0rem !important;
 }
 
+.navbar{
+  padding: .5rem  1rem !important;
+}
+
 }
 

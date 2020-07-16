@@ -112,6 +112,9 @@ header {
   background: var(--bggradient);
 
 }
+.navbar{
+  padding: .5rem 5rem 0.5rem 1rem !important;
+}
 
 header .container .col-md-7 {
   font-family: "Rubik", sans-serif;
@@ -184,6 +187,8 @@ box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 .fatop i{
   color: white;
 }
+
+
 /********** section 1 **************/
 
 .section-1 {
